@@ -50,40 +50,49 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1> Exploratory Data Analysis of Video Game Sales</h1>
+							<h1> Simple Linear regression in R</h1>
 							<p>Problem Statement<br>
-								There is a lot of historical data about the sales of video games available on multiple 
-								enterprise data sources, including cloud platforms and open sources. These data sources 
-								contain a lot of information about the sales of video games, including, but not restricted to, 
-								video game platforms, genre, year of launch, sales in different regions, etc.
-								The motive is to perform Exploratory Data Analysis(EDA) on one such open source data set.
-								EDA is a method to analyze data to summarize important variables, find trends, and use 
-								visualization to understand better the insights that the data can provide.
-								The purpose of this research is to understand the data and its distribution. We will then 
-								conclude with any insights drawn from the data. This would be helpful in future decision 
-								making.
+								This is an inteoductory project in R. I performed this in R Studio. As part of this project, we will take data for two variables, X and Y and 
+								compute all steps to perform simple linear regression where X is the explanatory variable and Y is the response variable.
 							</p>
 							<p>
-							Real World Impact
-							Exploratory Data Analysis of video game sales, or any other sales for that matter, can help us 
-							make impactful business strategies, understand consumer behaviour and as a result, lead to 
-							successful business decisions.
-							<ol> 
-								<li>Genres: It can help us identify popular genres of games. Decisions can be made 
-									about how much investment should be made in certain products once we 
-									understand the sales. This can also lead to innovation.</li>
-								<li>Platform: Based on which platform generates how much sales, a business can decide 
-									how to diversify itself.</li>
-								<li>The trend over the years: The popularity of a certain product can be analyzed by 
-									sales done over the years. This can help decide how to increase or decrease 
-									investment in them.</li>
-								<li>Region of sales: Different geographies have different purchase behaviours. It is 
-									always preferable to understand the demographics of any product’s sales. </li>
-							</ol> 
-							Such key-markers about a product, or a competitor’s product can be studied. EDA helps in multiple fields of a business, from marketing, innovation, sales, technology and budgeting.
+							<a href = "https://github.com/sonali0901/analytics-portfolio-projects/blob/main/Linear%20Regression%20in%20R/simpledata.csv">Link to Data</a> <br>
+							Detailed project with output screenshots in linked below. Click on "View Project" button.
+							</p>
+							<p>
+								<ol>
+									<li>
+										Uploading the data in R studio and viewing it <br>
+										<code> > data_file <- "/My System/simpledata.csv" </code>
+										<br><code>> sample_data <- read.csv(data_file)</code>
+										<br><code>> View(sample_data)</code>	
+									</li>
+									<li>
+										Summary of the dataset <br>
+										<code> > summary(sample_data) </code>
+									</li>
+									<li>
+										Structure of the dataset <br>
+										<code> > str(sample_data) </code>
+									</li>
+									<li>
+										Generating Scatterplot <br>
+										<code> > plot(sample_data$X, sample_data$Y, main = "Scatterplot b/w X and Y", xlab = "X", ylab = "Y") </code>
+									</li>
+									<li>
+										Generating Simple Linear regression and it’s summary <br>
+										<code> > simple_reg <- lm(sample_data$Y ~ sample_data$X, data = sample_data) </code> <br>
+										<code> > summary(simple_reg) </code>
+									</li>
+									<li>
+										Finding Intercept and Slope of the relationship <br>
+										<code> > intercept = simple_reg$coefficients[1] </code><br>
+										<code> slope <- simple_reg$coefficients[2] </code>
+									</li>
+								</ol>
 							</p>
 								<ul class="actions special">
-									<li><a href="https://www.kaggle.com/code/sonaligpt0/eda-project-video-game-sales" class="button large">View Project</a></li>
+									<li><a href="https://github.com/sonali0901/analytics-portfolio-projects/blob/main/Linear%20Regression%20in%20R/Introduction%20to%20R.pdf" class="button large">View Project</a></li>
 								</ul>
 							</p>
 						</div>
