@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Analytics Portfolio - Sonali G
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Analytics Portfolio - Sonali Gupta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Sonali Gupta</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+
+			<h1> Initial analysis and visualizations using Tableau</h1>
+			<p><b>Objective<br></b>
+				In this project, we will investigate the impact of several automobile engine factors on the vehicle’s mpg. The dataset contains information for 398 different automobile models. Information regarding the number of cylinders, displacement, horsepower, weight, acceleration, model year, origin, and car name as well as mpg is contained.
+			</p>
+			<p>
+			<b>Report<br></b>
+			For this dataset, mpg is our dependent variable. So first using Tableau, I built scatterplots with other independent variables to see the trend between the two variables. Following we have :
+			<ol> 
+				<li>Acceleration vs Mpg</li>
+				<li>Cylinder vs Mpg</li>
+				<li>Displacement vs Mpg</li>
+				<li>Horsepower vs Mpg</li>
+				<li>Origin vs Mpg</li>
+				<li>Weight vs Mpg</li>
+			</ol> 
+			<img src="images/Acc_vs_mpg.png" alt="Acceleration versus Mpg" width="400" height="400">
+			<img src="images/Cyln_vs_mpg.png" alt="Cylinder versus Mpg" width="400" height="400">
+			<img src="images/disp_vs_mpg.png" alt="Displacement versus Mpg" width="400" height="400">
+			<img src="images/hrs_vs_mpg.png" alt="Horsepower versus Mpg" width="400" height="400">
+			<img src="images/org_vs_mpg.png" alt="Origin versus Mpg" width="400" height="400">
+			<img src="images/weight_vs_mpg.png" alt="Weight versus Mpg" width="400" height="400">
+			</p>
+			<b>Analysis:</b><br>
+			Displacement, Weight and Horsepower show a good negative relation with the mpg. Next let’s see the distribution of our data about cars. First, let’s see how many cars belong to each year of make, below we plotted a bar graph using Tableau. <br>
+			<img src="images/Model_vs_cars.png" alt="Model versus Cars count" width="800" height="400"><br>
+			<b>Analysis:</b><br>
+			Maximum cars in the data belong to the year 73, the count is 40, followed by 36 cars in the year 78. Minimum cars belong to the year 74.Below we can see, that as we moved in years, the MPG for cars being made overall started improving.<br>
+			<img src="images/Min_max_mpg.png" alt="Min Max Mpg trend" width="800" height="400"><br>
+			<b>Analysis:</b><br> The minimum MPG from 70 to 82 changed from 9 mpg to 22 mpg. Similarly, the maximum MPG changed from 27 mpg to 44 mpg. That is great jump. So as the years passed, the mpg kept improving.<br>
+			Next, let’s visualize the spread of cars based on the origin of manufacture. For this we will utilize a pie chart that will show us how they are distributed across Origin. Analysis: This shows the maximum cars come from Origin 1, followed by Origin 3 and least from Origin 2.<br>
+			<img src="images/Origin spred.png" alt="Origin trend" width="800" height="400"><br>
+			</p>
+		</div>
+			</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Sonali Gupta. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
