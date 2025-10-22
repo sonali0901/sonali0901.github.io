@@ -1,5 +1,5 @@
 # Sonali Gupta's Portfolio Website
-https://kabirchaturvedi.github.io
+https://sonali0901.github.io/
 
 Welcome to the GitHub repository for my personal portfolio website. This site serves as a dynamic showcase of my expertise and projects in the fields of data science, data analytics and data visualization. As a dedicated professional with a robust educational background in Computer Science and Business Analytics, I specialize in harnessing the power of Python, SQL, and various data science tools to drive analytical solutions and innovative project outcomes.
 
